@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block pagetopcomments %}
+<!--Name: Matthew Hartigan
+  Assignment: CS336 Assignment #9
+  Page Name: awards.html
+  Created: 4/30/2019
+  Description: The awards.html page for Assignment #9.-->
+{% endblock %}
+{% block head %}
+    <meta name="keywords" content="awards">
+    <meta name="description" content="This is the awards page for the site.">
+    <title>Member Choice Awards</title>
+{% endblock %}
+{% block maincontent %}
+<div class="align-center">
+  <h2>Award for the best kind of biking!</h2>
+
+  <!--Awards table-->
+  <table class="awards">
+    <thead>
+    <tr>
+      <th> Entry</th>
+      <th> Title</th>
+      <th> Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="awards"><img src="/static/images/mountain-biking.jpg"
+                              alt="A photo of a person mountain biking."
+                              title="Mountain biking"
+                              class="medium"></td>
+      <td class="awards"> {{ test|e }}</td>
+      <td class="awards"> Mountain biking is the most fun because it is action packed.</td>
+    </tr>
+    <tr>
+      <td class="awards"><img src="/static/images/road-biking.jpg"
+                              alt="A photo of a person road biking."
+                              title="Road biking"
+                              class="medium"></td>
+      <td class="awards"> Road Biking</td>
+      <td class="awards"> Road biking is the most fun because you can do it in a large group and wear cool spandex.</td>
+    </tr>
+    <tr>
+      <td class="awards"><img src="/static/images/leisure-biking.jpg"
+                              alt="A photo of a person leisure biking."
+                              title="Leisure biking"
+                              class="medium"></td>
+      <td class="awards"> Leisure Biking</td>
+      <td class="awards"> Leisure biking is the best because you don't sweat!</td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <br>
+  <h3>Poll: What is your favorite kind of biking?</h3>
+  <form id="poll_form" onsubmit="updateCookies()" method="POST" action="http://127.0.0.1:5000/awards">
+    <label for="nominee_1">Mountain Biking</label>
+    <input class="nominee" type="radio" id="nominee_1" name="nominee" value="Mountain Biking" required><br>
+    <span class="totals">Total votes: {{ current_votes['Mountain Biking'] }}</span><br><br>
+    <label for="nominee_2">Road Biking</label>
+    <input class="nominee" type="radio" id="nominee_2" name="nominee" value="Road Biking" required><br>
+    <span class="totals">Total votes: {{ current_votes['Road Biking'] }}</span><br><br>
+    <label for="nominee_3">Leisure Biking</label>
+    <input class="nominee" type="radio" id="nominee_3" name="nominee" value="Leisure Biking" required><br>
+    <span class="totals">Total votes: {{ current_votes['Leisure Biking'] }}</span><br><br>
+
+    <!--Submit-->
+    <div class="submit, align-center">
+      <input id="submit" type="submit" name="submit" value="Submit"><br>
+      {% if vote_submitted %}
+       <h3>Thank you for voting!</h3>
+       {% endif %}
+    </div>
+  </form>
+
+{# Remove for Assn9 #}
+{#<script src="/static/js/poll.js"></script>#}
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block pagetopcomments %}
+<!--Name: Matthew Hartigan
+  Assignment: CS336 Assignment #9
+  Page Name: index.html
+  Created: 4/30/2019
+  Description: The index.html page for Assignment #9.-->
+{% endblock %}
+{% block head %}
+    <meta name="keywords" content="index">
+    <meta name="description" content="This is the index page for the site.">
+    <title>Index</title>
+{% endblock %}
+{% block maincontent %}
+    <div class="align-center">
+      <h1>Personal Health Training Conference</h1>
+      <p>Welcome to the Personal Health Training Conference. This summer we will gather at the Generic Convention Center
+        in Houston, TX to discuss modern ideas and techniques surrounding personal fitness.</p>
+      <h2>Dates of conference: June 16th - 17th, 2019</h2>
+      <figure>
+        <img src="/static/images/architecture-buildings-center.jpg"
+             alt="A photo of the Generic Convention Center."
+             title="The Generic Convention Center"
+             class="large">
+        <figcaption>The Generic Convention Center</figcaption>
+      </figure>
+    </div>
+{% endblock %}

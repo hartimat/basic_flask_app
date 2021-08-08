@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block pagetopcomments %}
+<!--Name: Matthew Hartigan
+  Assignment: CS336 Assignment #9
+  Page Name: meals.html
+  Created: 4/30/2019
+  Description: The meals.html page for Assignment #9.-->
+{% endblock %}
+{% block head %}
+    <meta name="keywords" content="meals">
+    <meta name="description" content="This is the meal page for the site.">
+    <title>Meals</title>
+{% endblock %}
+{% block maincontent %}
+<br>
+    <!--Menus-->
+    <div class="horizontal-selection">
+        <!--Day 1-->
+        <div class="column align-center">
+            <img src="/static/images/silverware-1.jpg"
+                 alt="A photo of a place setting for the first day's menu." title="Menu Day 1" class="small"><br>
+            <b>Menu Day 1</b><br><br>
+            Breakfast<br>
+            Breakfast Tacos<br><br>
+            Lunch<br>
+            Soup, salad and sandwiches<br><br>
+            Dinner<br>
+            BBQ with grilled vegetables<br>
+        </div>
+        <!--Day 2-->
+        <div class="column align-center">
+            <img src="/static/images/silverware-2.jpg" alt="A photo of a place setting for the second day's menu."
+                 title="Menu Day 2"
+                 class="small"><br>
+            <b>Menu Day 2</b><br><br>
+            Breakfast<br>
+            Breakfast Tacos<br><br>
+            Lunch<br>
+            Soup, salad and sandwiches<br><br>
+            Dinner<br>
+            BBQ with grilled vegetables<br>
+        </div>
+    </div>
+    <!--Special Option-->
+    <div class="horizontal-selection">
+        <div class="footer align-center">
+            <br>
+            Full Meal Package: $250.00 (includes Dinner Day 2)<br>
+            Dinner Day 2: $75.00
+        </div>
+    </div>
+{% endblock %}

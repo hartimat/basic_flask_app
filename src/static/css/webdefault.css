@@ -1,0 +1,127 @@
+/*Name: Matthew Hartigan
+Assignment: CS336 Assignment #9
+Page Name: webdefault.css
+Created: 4/30/2019
+Description: The css page for Assignment #9.*/
+
+figure {
+    display: table;
+    margin: auto;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+}
+
+fieldset {
+    margin: 10px;
+}
+
+fieldset:hover {
+    background-color: lightgreen;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div.submit {
+    padding-left: 10px;
+    margin: 10px;
+}
+
+table.awards {
+    width: 50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td.awards {
+    border: 1px solid black;
+    text-align: left;
+    padding-left: 5px;
+}
+
+th.awards {
+    font-weight: bold;
+}
+
+td.awards {
+    vertical-align: top;
+}
+
+table.schedule {
+    width: 95%;
+    border: none;
+    margin: auto;
+    empty-cells: hide;
+}
+
+th, td.schedule {
+    border: none;
+    text-align: left;
+    padding-left: 5px;
+}
+
+th.schedule {
+    font-weight: bold;
+    vertical-align: top;
+}
+
+td.schedule {
+    vertical-align: top;
+}
+
+img.large {
+    width: 500px;
+    height: 500px;
+}
+
+img.medium {
+    width: 250px;
+    height: 250px;
+}
+
+img.small {
+    width: 100px;
+    height: 100px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.column {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.horizontal-selection {
+    clear: both;
+}
+
+.invalid {
+    background-color: lightblue;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 800px) {
+    body header, main, li {
+        font-size: 30px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    .column {
+        margin: 1% 0 1% 0;
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 11px;
+    }
+}
+

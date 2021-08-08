@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block pagetopcomments %}
+<!--Name: Matthew Hartigan
+  Assignment: CS336 Assignment #9
+  Page Name: admin.html
+  Created: 4/30/2019
+  Description: The admin.html page for Assignment #9.-->
+{% endblock %}
+{% block head %}
+    <meta name="keywords" content="admin">
+    <meta name="description" content="This is the admin page for the site.">
+    <title>Admin</title>
+{% endblock %}
+{% block maincontent %}
+  <h1>This page lets you complete administrative tasks</h1>
+  <h2>Nametags</h2>
+{#    Not needed for this assignment (#9)... #}
+{#  <a href="templates/nametags8.html">Name Badge Labels (8 per page)</a><br>#}
+{#  <a href="templates/nametags10.html">Name Badge Labels (10 per page)</a><br><br>#}
+  {% include 'workshoplists.html' %}
+  {% include 'lists.html' %}
+{% endblock %}
+

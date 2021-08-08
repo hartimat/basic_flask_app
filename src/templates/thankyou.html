@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block pagetopcomments %}
+<!--Name: Matthew Hartigan
+  Assignment: CS336 Assignment #9
+  Page Name: thankyou.html
+  Created: 4/30/2019
+  Description: The thankyou.html page for Assignment #9.-->
+{% endblock %}
+{% block head %}
+    <meta name="keywords" content="thankyou">
+    <meta name="description" content="This is the thank you page for Assignment #9.">
+    <title>Thank You</title>
+{% endblock %}
+{% block maincontent %}
+    <h1>Thanks {{ form_input['title'] | capitalize }} {{ form_input['first_name'] }} {{ form_input['last_name'] }}! Your registration form has been successfully submitted.</h1><br>
+    <h3>Here is a summary of your information submitted on {{  form_input['date_of_registration'] }}:</h3>
+    <h4>Personal:</h4>
+    {{ form_input['address_1'] }}<br>
+    {{ form_input['address_2'] }}<br>
+    {{ form_input['city'] }}, {{ form_input['state'] }} {{ form_input['zip_code'] }}<br>
+    {{ form_input['telephone'] }}
+    <h4>Company:</h4>
+    {{ form_input['company_name'] }}<br>
+    {{ form_input['company_website'] }}<br>
+    {{ form_input['company_position'] }},  {{ form_input['email'] }}<br>
+    <h4>Billing:</h4>
+    {{ form_input['billing_first_name'] }} {{ form_input['billing_last_name'] }}<br>
+    {{ form_input['card_type'] | capitalize }}: {{ form_input['card_number'] }}, CSV: {{ form_input['card_security_value'] }}<br>
+    Expiration: {{ form_input['expiration_year'] }}, {{ form_input['expiration_month'] }}
+    <h4>Conference Ammenity Selections:</h4>
+    {{ form_input['meal_option'] }}<br>
+    Session 1: {{ form_input['session_1'] }}<br>
+    Session 2: {{ form_input['session_2'] }}<br>
+    Session 3: {{ form_input['session_3'] }}<br><br><br>
+{% endblock %}

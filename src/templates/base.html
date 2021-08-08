@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% block pagetopcomments %}{% endblock %}
+<html lang="en">
+<head>
+    <meta name="author" content="Matthew Hartigan">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    {% block head %}{% endblock %}
+    <link href="/static/css/webdefault.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav>
+    {% include 'nav.html' %}<br>
+    {% include 'login.html' %}
+  </nav>
+</header>
+<main>
+    {% block maincontent %}{% endblock %}
+</main>
+<footer>
+  <address>
+    <small>123 Main Street</small>
+    <br>
+    <small>Houston, TX 77002</small>
+    <br>
+    <small>Phone: 1-800-555-5555</small>
+    <br>
+    <small>Email: test@somedomain.com</small>
+  </address>
+  <p>
+    <small>While this web site was created to satisfy the requirement of building a web site for an academic course
+      at Regis University, the views and opinions expressed on this web site are solely those of the original author
+      and do not necessarily represent the views and opinions of Regis University.
+    </small>
+  </p>
+</footer>
+</body>
+</html>

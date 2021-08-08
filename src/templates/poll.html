@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block pagetopcomments %}
+<!--Name: Matthew Hartigan
+  Assignment: CS336 Assignment #9
+  Page Name: poll.html
+  Created: 4/30/2019
+  Description: The poll.html page for Assignment #9.-->
+{% endblock %}
+{% block head %}
+  <meta name="keywords" content="poll">
+  <meta name="description" content="This is the poll page for the site.">
+  <title>Poll</title>
+{% endblock %}
+{% block maincontent %}
+  <!--Options-->
+  <br>
+  <h3>Poll: What is your favorite kind of biking?</h3>
+  <form id="poll_form" onsubmit="updateCookies()">
+    <label for="nominee_1">Mountain Biking</label>
+    <input class="nominee" type="radio" id="nominee_1" name="nominee" value="Mountain Biking" required><br>
+    <span class="totals">Total votes: </span><br><br>
+    <label for="nominee_2">Road Biking</label>
+    <input class="nominee" type="radio" id="nominee_2" name="nominee" value="Road Biking" required><br>
+    <span class="totals">Total votes: </span><br><br>
+    <label for="nominee_3">Leisure Biking</label>
+    <input class="nominee" type="radio" id="nominee_3" name="nominee" value="Leisure Biking" required><br>
+    <span class="totals">Total votes: </span><br><br>
+
+    <!--Submit-->
+    <div class="submit">
+      <input id="submit" type="submit" name="submit" value="Submit"><br>
+    </div>
+  </form>
+<script src="/static/js/poll.js"></script>
+{% endblock %}

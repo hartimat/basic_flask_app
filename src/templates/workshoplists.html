@@ -1,0 +1,47 @@
+{# Name: Matthew Hartigan#}
+{# Assignment: CS336 Assignment #9#}
+{# Page Name: workshoplists.html#}
+{# Created: 4/30/2019#}
+{# Description: The workshoplists.html file for Assignment #9.#}
+<h4>Select a button to view a list of all registrants for that item: </h4>
+<form id="user_lists" method="POST" action="http://127.0.0.1:5000/admin">
+{#    Session 1#}
+    <label for="session_1a">Session 1a - Safe Running Techniques</label>
+    <input type="radio" id="session_1a" name="list" value="session_1a" required><br>
+    <label for="session_1b">Session 1b - Stationary vs. Road Biking</label>
+    <input type="radio" id="session_1b" name="list" value="session_1b" required><br>
+    <label for="session_1c">Session 1c - Swimming for Endurance</label>
+    <input type="radio" id="session_1c" name="list" value="session_1c" required><br>
+
+{#    Session 2#}
+    <label for="session_2a">Session 2a - Weight Lifting Basics</label>
+    <input type="radio" id="session_2a" name="list" value="session_2a" required><br>
+    <label for="session_2b">Session 2b - Calisthenics for Strength</label>
+    <input type="radio" id="session_2b" name="list" value="session_2b" required><br>
+    <label for="session_2c">Session 2c - Yoga for Building Muscle</label>
+    <input type="radio" id="session_2c" name="list" value="session_2c" required><br>
+
+{#    Session 3#}
+    <label for="session_3a">Session 3a - Nutrition Plan Based on your Personal Needs</label>
+    <input type="radio" id="session_3a" name="list" value="session_3a" required><br>
+    <label for="session_3b">Session 3b - The Role of Proper Rest</label>
+    <input type="radio" id="session_3b" name="list" value="session_3b" required><br>
+    <label for="session_3c">Session 3c - Keeping your Body Healthy through Mobilization</label>
+    <input type="radio" id="session_3c" name="list" value="session_3c" required><br>
+
+{#    Meal Options#}
+    <label for="meal_pack">Meal pack</label>
+    <input type="radio" id="meal_pack" name="list" value="meal_pack" required><br>
+    <label for="dinner_only">Day 2 dinner only</label>
+    <input type="radio" id="dinner_only" name="list" value="dinner_only" required><br>
+
+{#    All registrants#}
+    <label for="registrants">All registrants</label>
+    <input type="radio" id="registrants" name="list" value="registrants" required><br>
+
+{#<!--Submit-->#}
+    <div class="submit">
+        <input type="submit" name="submit" id="submit" value="Submit for list"><br>
+    </div>
+
+</form>

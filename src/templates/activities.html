@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block pagetopcomments %}
+<!--Name: Matthew Hartigan
+  Assignment: CS336 Assignment #9
+  Page Name: activities.html
+  Created: 4/30/2019
+  Description: The activities.html page for Assignment #9.-->
+{% endblock %}
+{% block head %}
+  <meta name="keywords" content="activities">
+  <meta name="description" content="This is the activities page for the site.">
+  <title>Local Activities</title>
+{% endblock %}
+{% block maincontent %}
+  <h3>Activities available during the conference</h3>
+
+  <!--List of Activities-->
+  <ul>
+    <li>Tour of downtown</li>
+    <li>Bar crawl</li>
+    <li>Houston Astros vs. Chicago White Sox Baseball Game</li>
+  </ul>
+
+  <!--Associated video-->
+  <iframe width="500" height="250" src="https://www.youtube.com/embed/p35-ZZuKEow" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endblock %}

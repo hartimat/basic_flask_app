@@ -1,0 +1,78 @@
+/*Name: Matthew Hartigan
+Assignment: CS336 Assignment #9
+Page Name: nametags8.css
+Created: 4/30/2019
+Description: The nametags8 css page for Assignment #9.*/
+
+.page {
+  width: 100%;
+  height: 100%
+}
+
+.top-row {
+  clear: both;
+  width: 100%;
+  margin: 14mm 17mm 4.5mm 17mm;
+}
+
+.bottom-row {
+  clear: both;
+  width: 100%;
+  margin: 0mm 17mm 14mm 17mm;
+}
+
+.row {
+  clear: both;
+  width: 100%;
+  margin: 0mm 17mm 4.5mm 17mm;
+}
+
+.left-nametag {
+  margin: 0mm 9mm 0mm 0mm;
+  width: 86mm;
+  height: 59mm;
+  line-height: 59mm;
+  border-style: none;
+  text-align: center;
+  display: block;
+  float: left;
+}
+
+.right-nametag {
+  margin: 0mm 0mm 0mm 0mm;
+  width: 86mm;
+  height: 59mm;
+  line-height: 59mm;
+  border-style: none;
+  text-align: center;
+  display: block;
+  float: left;
+}
+
+.text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.first-name {
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+.last-name {
+  font-size: 12pt;
+}
+
+.position {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.company {
+  font-size: 12pt;
+}
+
+.city-state {
+  font-size: 12pt;
+}

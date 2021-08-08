@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block pagetopcomments %}
+<!--Name: Matthew Hartigan
+  Assignment: CS336 Assignment #9
+  Page Name: keynote.html
+  Created: 4/30/2019
+  Description: The keynote.html page for Assignment #9.-->
+{% endblock %}
+{% block head %}
+    <meta name="keywords" content="keynote">
+    <meta name="description" content="This is the keynote page for Assignment #9.">
+    <title>Keynote Speakers</title>
+{% endblock %}
+{% block maincontent %}
+<br>
+    <!--First Speaker-->
+    <div class="horizontal-selection">
+        <div class="column align-center">
+            <figure>
+                <img src="/static/images/keynote-1.jpg"
+                     alt="Profile picture of the keynote speaker for the first day of the conference, a weight lifter."
+                     title="Keynote Speaker One"
+                     class="medium"><br>
+                <figcaption>
+                    <b>John Smith</b><br>
+                    John is an accomplished weight lifter. You can tell because he is wearing a purple shirt.<br>
+                </figcaption>
+            </figure>
+        </div>
+        <!--Second Speaker-->
+        <div class="column align-center">
+            <figure>
+                <img src="/static/images/keynote-2.jpg"
+                     alt="Profile picture of the keynote speaker for the second day of the conference, a yoga instructor."
+                     title="Keynote Speaker Two"
+                     class="medium"><br>
+                <figcaption>
+                    <b>Jane Doe</b><br>
+                    Jane is an accomplished yoga instructor. You can tell because her favorite food is soft
+                    pretzels.<br><br>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+{% endblock %}
