@@ -1,4 +1,4 @@
-# Welcome to "basic_flask_app"!
+# Welcome to "flask_workout_conference_app"!
 
 ## [ DESCRIPTION ]
 
